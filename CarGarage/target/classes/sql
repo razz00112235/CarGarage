@@ -1,0 +1,145 @@
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+--
+-- Host: localhost    Database: flipcart
+-- ------------------------------------------------------
+-- Server version	8.0.35
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `product_add`
+--
+
+DROP TABLE IF EXISTS `product_add`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `product_add` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `product_id` int DEFAULT NULL,
+  `product_name` varchar(100) DEFAULT NULL,
+  `product_price` double DEFAULT NULL,
+  `product_image` varchar(255) DEFAULT NULL,
+  `product_count` int DEFAULT NULL,
+  `product_category` varchar(200) DEFAULT NULL,
+  `product_description` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=144 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_add`
+--
+
+LOCK TABLES `product_add` WRITE;
+/*!40000 ALTER TABLE `product_add` DISABLE KEYS */;
+INSERT INTO `product_add` VALUES (131,2,'XUV300',780000,'xuv300.jpg',9,'Mahendra','The Mahindra XUV300 is a subcompact crossover SUV produced by the Indian car manufacturer Mahindra & Mahindra. The car was first launched in February 2019 and is based on the SsangYong Tivoli platform. The XUV300 is known for its spacious cabin and feature-packed interior, making it a popular choice among buyers in the subcompact SUV segment. The Mahindra XUV300 is available in both petrol and diesel engine options, with a 1.2-liter turbocharged petrol engine and a 1.5-liter turbocharged diesel engine respectively. The car is also equipped with safety features such as front and rear parking sensors, a rear-view camera, hill start assist, and a number of airbags. The XUV300 is marketed as a stylish and sophisticated SUV,'),(132,3,'Scorpio-N',1360000,'Mahindra Scorpio Classic.jpg',6,'Mahendra','The Mahindra Scorpio N is an upgraded version of the popular Scorpio SUV. With its bold and rugged design, the Scorpio N stands out on the road. It features a muscular stance, prominent grille, and distinctive LED headlights. Under the hood, the Scorpio N offers a powerful and refined mHawk diesel engine, providing enhanced performance and improved fuel efficiency. Whether you\'re navigating city streets or tackling off-road terrains, the Scorpio N delivers a smooth and responsive driving experience. Inside the cabin, the Scorpio N offers a comfortable and spacious environment for both the driver and passengers. It is equipped with modern features such as a touchscreen infotainment system, automatic climate control,'),(133,1,'XUV3XO',750000,'XUV3XO.jpg',5,'Mahendra','The Mahindra XUV 3XO was launched as a heavily revamped version of the XUV 300 in India. The SUV was a big step up from its predecessor in terms of design, as it received a fully- revamped front end with new headlamps and a larger front grille, along with C-shaped taillamps connected via a lightbar. It also featured a new cabin thats quite similar in design and layout to that of the all-electric XUV400 Pro. A total of nine trim levels are on offer  MX1, MX2, MX2 Pro, MX3, MX3 Pro, AX5, AX5 L, AX7 and AX7 L, with prices ranging from Rs 7.49 lakh to 13.99 lakh (ex-showroom).'),(134,4,'Mahindra Thar',2000000,'Thar.jpg',10,'Mahendra','The 5-door version of the Mahindra Thar will be one of the hottest launches this year, and car&bike now has received some exclusive photos of a production-ready test mule. The model was spotted testing in Mumbai, and judging by the looks of it, this appears to be the production-ready version of the 5-Door Thar. That is understandable because the SUV is expected to be introduced sometime next month, possibly on August 15, 2024, which has been a tradition with all important car launches from Mahindra.'),(135,5,'Mahindra Bolero Maxx Pik-Up',785000,'Bolero Maxx Pick Up.jpg',15,'Mahendra','The Mahindra Bolero Pik-Up features among the most popular light commercial vehicle within India. It is the highest-selling model in its category as well. Mahindra Bolero Pik-Up has established Mahindra as a player to be reckoned with in the rapid growing last-mile delivery vehicle segment in India.'),(136,7,'Maruti Suzuki Dzire',750000,'Maruti Suzuki-Dzire-310320201811.jpg',4,'Maruti Suzuki','Now in its third generation, the Maruti Suzuki Dzire is easily the most popular compact sedan in India. Class-leading cabin space and features as well as a well-proportioned design in addition to the peace of mind of buying a Maruti sure seem to have worked in the cars favour. The Maruti Suzuki Dzire is a petrol-only model and can be had with either a manual transmission or an AMT auto.'),(137,6,'Maruti Swift',739000,'Maruti Swift.jpg',8,'Maruti Suzuki','The Maruti Suzuki Swift is now in its fourth generation in India. The new Swift boasts evolutionary styling and is slightly larger than its predecessor, although its wheelbase has remained unchanged at 2,450mm. The interior and much of the equipment list is similar to models like the Baleno and Fronx, but the big news is that it gets a brand-new engine under the hood. Debuting on the Swift is a new 1.2-litre three-cylinder Z12E engine that makes 82hp and 112Nm, but the number of interest is the ARAI-rated 25.75kpl fuel economy for the petrol-AMT variant. The Swift continues to rival the Hyundai Grand i10 Nios and the Tata Tiago.'),(138,8,'Maruti Jimmy',1620000,'Maruti Jimmy.jpg',14,'Maruti Suzuki','The Maruti Jimny 5-door is under four metres long, but unlike most other compact SUVs, it is underpinned by a tough ladder-frame architecture has a robust 4x4 system. It looks similar to the three-door model that is sold overseas, with a design charcterised by square elements. The SUV is powered by the 1.5-litre petrol engine and it also gets auto engine stop/start for better fuel efficiency. The engine is mated either to a 5-speed manual or a 4-speed automatic transmission. When it comes to off-road gear, the Jimny 5-door gets Suzukis AllGrip Pro 4x4 system with a manual transfer case and low range gearbox with 2WD-high, 4WD-high and 4WD-low. The Jimny 5-door is also well equipped, offering a host of safety features including six airbags.'),(139,9,'Maruti Ciaz',1060000,'CiazModelImage.jpg',5,'Maruti Suzuki','The Ciaz is Maruti Suzukis smart and sensible mid-sized sedan. A popular model, the Ciaz was updated in 2018 with revised styling, more features and a more powerful mild-hybrid petrol engine. Following the discontinuation of diesel engine versions, the Ciaz range now only comprises petrol-manual and petrol-automatic options. The Ciaz is exclusively sold from Maruti Suzukis Nexa retail network.'),(140,10,'Tata Punch EV',1105000,'TatapunchEv.jpg',8,'Tata','Tata Motors has launched the all-new Punch EV in the Indian market with prices ranging from Rs. 10.99 lakh to Rs. 14.49 lakh (ex-showroom). Based on Tatas new born EV Acti.ev architecture, the Punch EV will become Tatas fourth EV to go on sale in India after the electric versions of the Nexon, Tiago and Tigor. The vehicle will be available in a total of five trims- Smart, Smart +, Adventure, Empowered and Empowered +and two range options  Standard and Long Range (LR).'),(141,11,'Kia Seltos',1271000,'kiaSaltos.jpg',8,'Kia','The 2023 Kia Seltos is a better-rounded package than the pre-facelift model. It\'s also a good choice among the eight other vehicles in this mid-size SUV segment. This car gets a new turbo-petrol engine option, new segment-first features, Level 2 ADAS, and cosmetic changes.'),(142,12,'Kia Sonet',905000,'kiaSonet.jpg',15,'Kia','The Sonet is a stylish compact SUV offering a feature-rich and premium interior, powerful and refined engine options, and a reasonably comfortable ride. It boasts advanced technology and a host of safety features.'),(143,13,'Mercedes-Benz G',30000000,'Mercedes-Benz G-Class.jpg',2,'Mercedes-Benz','The G-Class, despite its price, is not just for show. It offers powerful driving with great steering, speed, and braking. It\'s comfortable even on rough roads, inviting you to explore. The cost is justified mainly through style and emotional appeal.');
+/*!40000 ALTER TABLE `product_add` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `product_order`
+--
+
+DROP TABLE IF EXISTS `product_order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `product_order` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `product_id` int DEFAULT NULL,
+  `product_name` varchar(100) DEFAULT NULL,
+  `product_price` bigint DEFAULT NULL,
+  `product_quantity` int DEFAULT NULL,
+  `total_price` bigint DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `product_order`
+--
+
+LOCK TABLES `product_order` WRITE;
+/*!40000 ALTER TABLE `product_order` DISABLE KEYS */;
+/*!40000 ALTER TABLE `product_order` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_data`
+--
+
+DROP TABLE IF EXISTS `user_data`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(100) DEFAULT NULL,
+  `user_mail` varchar(100) DEFAULT NULL,
+  `user_pass` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `user_mail_unique` (`user_mail`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_data`
+--
+
+LOCK TABLES `user_data` WRITE;
+/*!40000 ALTER TABLE `user_data` DISABLE KEYS */;
+INSERT INTO `user_data` VALUES (4,'Meghraj','meghrajyadav.yadav20@gmail.com','12345'),(5,'Demo20','demo20@gmail.com','12345'),(6,'demo21','demo21@gmail.com','000000'),(7,'demo22','demo22@gmail.com','123123'),(8,'demo222','demo222@gmail.com','123456'),(9,'demo10','demo10@gmail.com','12345'),(11,'Demo111','Demo111@gmail.com','12345'),(12,'demo3','demo3@gmail.com','12345'),(13,'demo5','demo5@gmail.com','12345'),(14,'demo7','demo7@gmail.com','12345'),(16,'Demo1','demo121@gmail.com','12345'),(18,'Demo1','demo1121@gmail.com','12345'),(19,'h','j@g','k'),(20,'azad','azad1@gmail.com','1234'),(21,'azad','azad@gmail.com','1234'),(23,'Demo111','demo11111@gmail.com','123'),(24,'Demo1','demo123@gmail.com','a123');
+/*!40000 ALTER TABLE `user_data` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `user_order`
+--
+
+DROP TABLE IF EXISTS `user_order`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `user_order` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(100) DEFAULT NULL,
+  `user_mail` varchar(100) DEFAULT NULL,
+  `product_id` int DEFAULT NULL,
+  `product_name` varchar(100) DEFAULT NULL,
+  `product_quantity` int DEFAULT NULL,
+  `product_price` bigint DEFAULT NULL,
+  `order_id` int DEFAULT NULL,
+  `order_address` varchar(200) DEFAULT NULL,
+  `product_category` varchar(200) DEFAULT NULL,
+  `payment_mode` varchar(50) DEFAULT NULL,
+  `purchase_date` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `user_order`
+--
+
+LOCK TABLES `user_order` WRITE;
+/*!40000 ALTER TABLE `user_order` DISABLE KEYS */;
+INSERT INTO `user_order` VALUES (59,'azad','demo123@gmail.com',9,'Maruti Ciaz',1,1060000,1,'qqrert','Maruti Suzuki','Cash On Delivery','2024-07-23 15:09:40'),(60,'azad','demo123@gmail.com',10,'Tata Punch EV',3,3315000,1,'qqrert','Tata','Cash On Delivery','2024-07-23 15:09:40'),(61,'Nyasa Yadav','demo123@gmail.com',9,'Maruti Ciaz',3,3180000,2,'jkljkj','Maruti Suzuki','Cash On Delivery','2024-07-23 15:11:56');
+/*!40000 ALTER TABLE `user_order` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-07-24 16:42:02
